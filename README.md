@@ -16,7 +16,7 @@ Edges: connection between nodes
 ### NetworkX API
 
 Basic systanxis
-'''python
+```python
 import networkx as nx
 G = nx.Graph()
 
@@ -25,7 +25,7 @@ G.nodes()
 
 G.add_edge(1, 2)
 G.edges()
-'''
+```
 
 
 # INDEX
@@ -61,14 +61,14 @@ Nodes are ordered in a cirucalr way and arc lines represent the edges
 ### nxviz API
 
 Ovierview
-'''python
+```python
 import nxviz as nv
 
 ap = nv.ArcPlot(G)
 ap.draw()
 plt.show()
 
-'''
+```
 
 ### Degree Centrality
 How many neighboars does a node have
@@ -77,10 +77,10 @@ N neighbors / Total nodes
 - if self loops are not allowed
 N neighbors / (Total nodes - 1)
 
-'''python
+```python
 G.neighors(node)
 nx.degree_centrality(G)
-'''
+```
 
 ### Path Finding
 It is important for:
